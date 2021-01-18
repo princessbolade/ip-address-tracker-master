@@ -1,34 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-family: 'Rubik', sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
 }
 
-.div1{
-    background-image: url('images/pattern-bg.png');
-    background-position: center;
-    background-size: cover;
-    height: 42vh;
-    
+.div1 {
+  background-image: url("images/pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 42vh;
 }
 
-.input1{
-    width: 350px;
-
+.input1 {
+  width: 350px;
 }
 
-.borderR{
-    border-radius: 10px 10px;
-   
+.borderR {
+  border-radius: 10px 10px;
 }
 
-#mapid{
-    height: 500px;
-    
-   
+#mapid {
+  height: 500px;
 }
