@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>IP Address Tracker</title>
+</head>
+<body>
+<div class="div1 container py-6">
+  <h1 class="text-white text-2xl text-center font-semibold"> IP Address Tracker</h1>
+  <div class="card-mail m-auto mx-auto  flex justify-center items-center my-10">
+    <input type="email" class="input1 h-12 placeholder-gray-500 outline-none text-xs rounded-tl-2xl rounded-bl-2xl border-l border-t border-b border-gray-200 rounded-l-md text-base md:text-lg px-3 py-2" placeholder=" Search for any IP address or domain">
+    <button class="bg-black h-12 text-black border-2 border-black font-bold px-3 py-2 focus:outline-none rounded-tr-2xl rounded-br-2xl text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500"><img class="mt" src="images/icon-arrow.svg" alt=""></button>
+</div>
+
+<div class="flex justify-center items-center text-center">
+  <div class="max-w-full px-6 my-4 mr-14 py-6 bg-white shadow-md borderR">
+    <div class="flex justify-between items-center pr-10">
+      <div class=" flex flex-col space-x-10 mt-8">
+      <h4 class="font-extrabold text-sm color-gray-200">IP Address</h4>
+      <h1 class="font-extrabold text-3xl py-4 text-center" id="ipAdd"></h1>
+      </div>
+      
+      <div class=" flex flex-col space-x-10 mt-8">
+      <h4 class="font-extrabold text-sm color-gray-200">Location</h4>
+      <h1 class="font-extrabold text-3xl py-4 text-center" id="location" > <br></h1>
+      </div>
+      
+      <div class=" flex flex-col space-x-10 mt-8">
+      <h4 class="font-extrabold text-sm color-gray-200">Timezone</h4>
+      <h1 class="font-extrabold text-3xl py-4 text-center" id="timezone"></h1>
+      </div>
+      
+      <div class=" flex flex-col space-x-10 mt-8">
+      <h4 class="font-extrabold text-sm color-gray-200">ISP</h4>
+      <h1 class="font-extrabold text-3xl py-4 text-center" id="isp"><br>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+
+    <div id="mapid"></div>
+
+</body>
+<script src="script.js"></script>
+</html>
