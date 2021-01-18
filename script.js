@@ -18,8 +18,13 @@ result.then((res) => {
       '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(mymap);
   document.getElementById("ipAdd").textContent = res.ip;
-  document.getElementById("location").textContent =
-    res.location.region;
+  document.getElementById("location").textContent = res.location.region;
   document.getElementById("timezone").textContent = res.location.timezone;
   document.getElementById("isp").textContent = res.isp;
+});
+
+const input = document.querySelector(".input11");
+input.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const inputVal = e.target.value;
 });
